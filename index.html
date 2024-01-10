@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<div class="hero-header">
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-m"></i>
+        <i class="fa-solid fa-a"></i>
+        <i class="fa-solid fa-r"></i>
+        <i class="fa-solid fa-c"></i>
+      </div>
+      <nav>
+        <div class="togglebtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="navlinks"><b>
+          <li><a href="#ACT1">ACT1</a></li>
+          <li><a href="#ACT2">ACT2</a></li>
+          <li><a href="#ACT3">ACT3</a></li>
+          <li><a href="#ACT4">ACT4</a></li>
+          <li><a href="#ACT5">ACT5</a></li>
+          <li><a href="#ACT6">ACT6</a></li>
+      </b>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="hero-pic">
+        <img src="mypic.jpg" alt="profile pic">
+      </div>
+      <div class="hero-text">
+        <h5>Hi, I'm <span class="input">Ampuyas, Marc Jay M. BSIT 2C</span></h5>
+        <h1>Welcome to My Personal Website!</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+  var typed = new Typed(".input", {
+    strings: ["IT Student in Evsu", "A Student", "A Rider"],
+    typeSpeed: 70,
+    backSpeed: 55,
+    loop: true
+  });
+
+  var togglebtn = document.querySelector(".togglebtn");
+  var nav = document.querySelector(".navlinks");
+
+  togglebtn.addEventListener("click", function () {
+    this.classList.toggle("click"); 
+    nav.classList.toggle("open"); 
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth <= 930 && !togglebtn.classList.contains("click")) {
+      nav.classList.remove("open");
+    } else {
+      nav.classList.add("open");
+    }
+  });
+</script>
+
+<div id="ACT1">
+  <div>
+    <h1><b>WELCOME TO HTML</b></h1>
+    <p>Eastern Visayas State University</p>
+    <p>College Of Engineering</p>
+    <p>Information Technology Department</p>
+  </div>
+
+  <div>
+    <p><strong>Student number: </strong><u>2020-08984</u></p>
+    <p><strong>Student Name: </strong><u>Marc Jay Ampuyas</u></p>
+    <p><strong>Course: </strong><u>Bachelor of Science in Information Technology</u></p>
+  </div>
+</div>
+
+
+<div id="ACT2">
+  <h1 style="text-align: center;"><i><u>PERSONAL DATA INFORMATION</u></i></h1>
+  <p><strong>Name:</strong> Marc Jay Ampuyas</p>
+  <p><strong>Date of Birth:</strong> August 30, 2001</p>
+  <p><strong>Email:</strong> marcjay.ampuyas@evsu.edu.ph</p>
+  <p><strong>Phone:</strong> (+63) 966-149-6698</p>
+
+  <h2>Education</h2>
+  <p><strong>Degree:</strong> Bachelor of Science in Information Technology</p>
+  <p><strong>School:</strong> Eastern Visayas State University</p>
+    
+  <h2>Skills</h2>
+  <ul>
+    <li>Rescuer</li>
+    <li>Radio Communicator</li>
+  </ul>
+</div>
+
+
+<div id="ACT3">
+  <div class="content-container">
+    <h1 style="text-align: center;">HTML TUTORIAL</h1>
+    <section id="Lesson1">
+      <h2>Lesson 1</h2>
+<h4>CHAPTER 1 The Internet and the Word Wide Web The Internet One of the major reasons business, home, and other users purchase computers is for Internet access. The Internet is a widely used research tool, providing society with access to global information and instant communications. Further, access to the Internet can occur anytime from a computer anywhere: at home, at work, at school, in a restaurant, on an airplane, and at a park. The Internet, also called the Net, is a worldwide collection of networks that links millions of businesses, government agencies, educational institutions, and individuals. Each of the networks on the Internet provides resources that add to the abundance of goods, services, and information accessible via the Internet. Today, more than one billion home and business users around the world access a variety of services on the Internet. The World Wide Web, or simply the Web, and e-mail are two of the more widely used Internet services. Other services include chat rooms, instant messaging, and VoIP (Voice over Internet Protocol).</h4>
+    </section>
+    <br>
+    <section id="Lesson2">
+      <h2>Lesson 2</h2>
+<br>
+<h4>CHAPTER 2
+Introduction to HTML
+Introduction
+HTML stands for Hyper Text Markup Language. It is used to design web pages using markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. Markup language is used to define the text document within tag which defines the structure of web pages. This language is used to annotate (make notes for the computer) text so that a machine can understand it and manipulate text accordingly. Most of markup (e.g. HTML) languages are human readable. Language uses tags to define what manipulation has to be done on the text.
+HTML is a markup language which is used by the browser to manipulate text, images and other content to display it in required format. HTML was created by Tim Berners-Lee in 1991. The first ever version of HTML was HTML 1.0 but the first standard version was HTML 2.0 which was published in 1999.</h4>
+    </section>
+    <section id="Lesson3">
+      <h2>Lesson 3</h2>
+<br>
+<h4>CHAPTER 3
+HTML - TEXT & TEXT FORMATTING
+HTML - TEXT
+Text is the backbone of any web page. It plays an double role; it provides content for web surfers to enjoy as they skim through articles and articles of information, but it also gives Search Engines and Spiders keywords and meta data. It is because of text on web pages that we have a network of seemingly endless information available at our fingers.
+HTML Paragraph Text
+Any text containing more than a few lines (or sometimes even more) should exist inside of a paragraph tag. This tag is reserved specifically for blocks of text, such as those you would expect to find inside your favorite novel.</h4>
+    </section>
+    <br>
+    <a href="#Lesson1">Go To Lesson 1</a>
+    <br>
+    <a href="#Lesson2">Go To Lesson 2</a>
+    <br>
+    <a href="#Lesson3">Go To Lesson 3</a>
+    <br>
+    <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/List.html">List Html</a>
+    <br>
+    <a href="https://www.evsu.edu.ph/">Visit Evsu</a>
+  </div>
+</div>
+
+
+<div id="ACT4">
+	<h1><font size="200">Welcome to Our Tourist Destinations</h1></font>
+    <hr>
+    <br>
+    <h2><font size="100">Asia</h2></font>
+    <section class="img1">
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Japan.html"><img src="Japan.jpg" alt="JAPAN" height="100" width="200"></a>
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Philippines.html"><img src="Philippines.jpg" alt="PHILIPPINES" height="100" width="200"></a>
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Malaysia.html"><img src="Malaysia.jpg" alt="MALAYSIA" height="100" width="200"></a>
+    </section>
+    
+    <h2><font size="100" >Europe</h2></font>
+    <section class="img2">
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Italy.html"><img src="Italy.jpg" alt="ITALY" height="100" width="200"></a>
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Iceland.html"><img src="Iceland.jpg" alt="ICELAND" height="100" width="200"></a>
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Germany.html"><img src="Germany.jpg" alt="GERMANY" height="100" width="200"></a>
+    </section>>
+    
+    <h2><font size="100" >America</h2></font>
+    <section class="img3">
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Canada.html"><img src="Canada.jpg" alt="CANADA" height="100" width="200"></a>
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/GreenLand.html"><img src="Greenland.jpg" alt="GREEN LAND" height="100" width="200"></a>
+        <a href="file:///C:/Users/63917/Desktop/Ampuyas%20WEBSYSTEM/Columbia.html"><img src="Columbia.jpg" alt="COLUMBIA" height="100" width="200"></a>
+    </section>
+    
+    <p><font size="100" >Plan your next adventure today!</p></font>
+	</div>
+
+
+	<div id="ACT5">
+		<h1>School Activity Survey Form</h1>
+<hr>
+
+<form>
+	<label for="fname">First Name:</label><br>
+		<input type="text" id="fname" name="fname"><br>
+
+	<label for="lname">Last Name:</label><br>
+		<input type="text" id="lname" name="lname"><br><br>
+
+	<label for="gender">Gender:</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+	<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+ 	<label for="female">Female</label><br><br>
+
+	<label for="age">Age:</label><br>
+		<input type="text" id="age" name="age"><br>
+
+	<label for="email">Email:</label><br>
+		<input type="text" id="email" name="email"><br>
+
+	<label for="phone">Phone:</label><br>
+		<input type="text" id="phone" name="phone"><br>
+
+	<label for="city">City:</label><br>
+		<input type="text" id="city" name="city"><br><br>
+
+	<label for="country">Country:</label><br>
+		<select id="country" name="country">
+			<option value="philippines">Philippines</option>
+			<option value="usa">USA</option>
+			<option value="canada">Canada</option>
+			<option value="others">Others</option>
+ </select><br><br>
+
+	<label for="interest">Interest:</label><br>
+		<input type="checkbox" id="art" name="interest" value="art">
+	<label for="art">Art</label><br>
+		<input type="checkbox" id="music" name="interest" value="music">
+	<label for="music">Music</label><br>
+		<input type="checkbox" id="sports" name="interest" value="sports">
+	<label for="sports">Sports</label><br>
+	
+	<label for="comments">Comments:</label><br>
+		<textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+		<input type="submit" value="Submit">
+</form>
+	</div>
+
+
+	<div id="ACT6">
+		<table border="2" cellpadding="10" cellspacing="5">
+	<tr align="center">
+		<td><img src="a61.png" width="110" height="110"></td>
+		<td>8:00am</td>
+		<td>8:30am</td>
+		<td>9:00am</td>
+		<td>9:30am</td>
+		<td>10:00am</td>
+		<td>10:30am</td>
+		<td>11:00am</td>
+		<td>11:30am</td>
+		<td>12:00am</td>
+		
+	</tr>
+
+	<tr align="center">
+		<td>MONDAY</td>
+		<td colspan="3"><img src="a62.jfif" width="110" height="110"><br>DORAEMON</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		
+	</tr>
+<tr align="center">
+		<td>TUESDAY</td>
+		<td colspan="3"><img src="a64.png" width="110" height="110"><br>TV NEW</td>
+		<td colspan="3" rowspan="2"><img src="a63.jfif" width="110" height="110"><br>ONE PIECE</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		
+	</tr>
+<tr align="center">
+		<td>WENESDAY</td>
+		<td colspan="3"><img src="a62.jfif" width="110" height="110"><br>DORAEMON</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		
+		
+	</tr>
+
+
+
+
+
+
+</table>
+
+	</div>
+
+</body>
+</html>
